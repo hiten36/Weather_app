@@ -1,0 +1,258 @@
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.logo{
+    display: flex;
+    color: white;
+    align-items: center;
+    flex-direction: row;
+}
+.logo p{
+    margin: 0px 4px;
+}
+.logo img{
+    width: 20px;
+}
+.navbar{
+    padding: 4vh 0vw;
+    background-color: rgb(0, 0, 46);
+}
+.nav1 ul{
+    display: flex;
+    flex-direction: row;
+}
+.nav1 ul li a{
+    margin: 0px 15px;
+    color: white;
+    padding: 2px 5px;
+}
+#nn{
+    color: rgb(128, 128, 255);
+}
+.main{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.box{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.box1{
+    display: flex;
+    flex-direction: column;
+}
+.box12{
+    margin: 2vh 0vw;
+}
+.box12 span{
+    color: blue;
+}
+.check{
+    border: none;
+    background-color: rgb(199, 199, 199);
+    border-radius: 25px;
+    padding: 8px 20px;
+    box-shadow: 0px 14px 12px -11px #111; 
+    transition: all 0.1s;
+}
+.check:hover{
+    color: rgb(199, 199, 199);
+    background-color: #111;
+}
+.check:active{
+    box-shadow: 0px 14px 4px -13px #111;
+    transform: scale(0.96);
+}
+.box2{
+    width: 55%;
+}
+.box2 img{
+    width: 30vw;
+}
+.footer{
+    background-color: #111;
+    color: white;
+    height: 5vh;
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer a{
+    color: orange;
+    text-decoration: none;
+}
+.logo_a{
+    text-decoration: none;
+}
+.logo_ani{
+    animation: ani1 1.3s linear 0s infinite;
+}
+@keyframes ani1{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.w-main{
+    text-align: center;
+}
+.search{
+    height: 5rem;
+    width: 75%;
+    margin: 7vh auto;
+    background-color: rgb(0, 0, 68);
+    border-radius: 55px;
+    position: relative;
+}
+.search input{
+    width: 65%;
+    outline: none;
+    border: none;
+    position: absolute;
+    font-size: 19px;
+    left: 2%;
+    top: 17%;
+    padding: 1vh 1vw;
+    background-color: rgb(0, 0, 68);
+    color:white;
+}
+.search-btn{
+    position: absolute;
+    right: 1%;
+    top: 12%;
+    border-radius: 55px;
+    padding: 18px 36px;
+    background-color: rgb(8, 156, 255);
+    border: none;
+    outline: none;
+    color: white;
+}
+.w-box{
+    width: 37%;
+    margin: auto;
+    background-color: #2c2c2c;
+    border-radius: 10px;
+}
+p{
+    margin-bottom: 0;
+}
+.w-box1{
+    background-color: #383a3a;
+    padding: 3.5vh 1vw;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.temp{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 4vh;
+    color: white;
+}
+.temp img{
+    filter: invert(1);
+    width: 28%;
+}
+.w-box2{
+    padding: 3vh 1vw;
+}
+.location{
+    color: rgb(207, 207, 207);
+    text-align: start;
+}
+.output{
+    color: white;
+}
+.w-box2{
+    color: white;
+}
+.ab-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.ab1 img{
+    width: 30vw;
+}
+.ab2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.ab22 span{
+    color: rgb(0, 60, 255);
+}
+#about{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+@media screen and (max-width: 714px) {
+    .container{
+        max-width: 672px;
+    }
+    .w-box{
+        width: 55%;
+    }
+}
+@media screen and (max-width: 601px) {
+    .box{
+        flex-direction: column-reverse;
+    }
+    .main{
+        align-items: unset;
+    }
+    .box2 img{
+        width: 58vw;
+    }
+    .w-box{
+        width: 62%;
+    }
+    .search{
+        height: 4rem;
+    }
+    .search input{
+        top: 25%;
+        padding: 0vh 3vw;
+    }
+    .search-btn{
+        right: 1.5%;
+        padding: 13px 33px;
+    }
+    .box2{
+        width: 62%;
+        margin-bottom: 9vh;
+    }
+}
+@media screen and (max-width: 450px) {
+    .nav1 ul li a{
+        margin: 0px 5px;
+        padding: 2px 5px;
+    }
+    .navbar{
+        font-size: 13px;
+    }
+    .box2{
+        margin-bottom: 8vh;
+    }
+    .w-box{
+        width: 72%;
+    }
+}
