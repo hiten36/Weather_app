@@ -18,8 +18,8 @@ app.get('/weather',(req,res)=>{
 app.get('/about',(req,res)=>{
     res.render('about');
 })
-app.get('/ab',(req,res)=>{
-    res.render('ab');
+app.get('*',(req,res)=>{
+    res.render('404');
 })
 
 app.listen(port,()=>{
