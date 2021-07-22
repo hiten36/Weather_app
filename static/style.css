@@ -185,11 +185,16 @@ p{
 .ab-box{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
+}
+.ab1{
+    margin-right: 5vw;
 }
 .ab1 img{
     width: 30vw;
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(6px 6px 8px #222);
 }
 .ab2{
     display: flex;
@@ -239,6 +244,18 @@ p{
     .box2{
         width: 62%;
         margin-bottom: 9vh;
+    }
+    .ab-box{
+        flex-direction: column;
+    }
+    #about{
+        align-items: unset;
+    }
+    .ab1{
+        margin: 5vh 0vw;
+    }
+    .ab1 img{
+        width: 65vw;
     }
 }
 @media screen and (max-width: 450px) {
