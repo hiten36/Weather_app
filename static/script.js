@@ -70,6 +70,10 @@ document.querySelector('.search-btn').addEventListener('click',()=>{
                 {
                     var img="rainy.png";
                 }
+                if(main=='Thunderstorm')
+                {
+                    var img="thunder.png";
+                }
                 
                 let html=`<div class="location">
                     <p><span>${city}</span>, <span>${country}</span></p>
